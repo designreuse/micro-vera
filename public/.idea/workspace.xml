@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedf38a4-3438-4839-92ec-1442bf553c8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../acl/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../acl/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/acl.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/PermissionAdd.java" afterDir="false" />
@@ -16,6 +17,9 @@
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/PermissionDel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/RoleAddPermission.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/RoleAddUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/RoleDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/RoleDeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/model/UserDelete.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/open/AclApi.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/url/AclRequestUrl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/exec/pom.xml" afterDir="false" />
@@ -28,8 +32,17 @@
       <change afterPath="$PROJECT_DIR$/../acl/exec/src/main/resources/bootstrap.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/exec/src/main/resources/rbac.model.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../acl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../configuration/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../configuration/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/src/main/java/com/vera/configuration/ConfigurationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configuration/src/test/java/com/vera/configuration/ConfigurationApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/somiar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -45,12 +58,181 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/vera/shared/model/Rest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/vera/shared/model/RestCode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/src/main/java/com/aistlab/rank/RankApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/java/com/aistlab/rank/config/SwaggerApiConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/java/com/aistlab/rank/conntroller/RankController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/java/com/aistlab/rank/model/Record.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/java/com/aistlab/rank/service/RankService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/java/lombok.config" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rank/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rank/src/test/java/com/aistlab/rank/RankApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/src/main/java/com/vera/registration/RegistrationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registration/src/test/java/com/vera/registration/RegistrationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.stylelintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/README 2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/README-zh_CN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/_mock/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/_mock/_user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/_mock/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/angular 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/package 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/proxy.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.component 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.component.spec 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.module 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/core/core.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/core/module-import-guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/core/net/default.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/core/startup/startup.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/delon.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/default.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/default.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/default.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/fullscreen.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/icon.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/notify.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/search.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/storage.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/task.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/components/user.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/header/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/setting-drawer/setting-drawer-item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/setting-drawer/setting-drawer-item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/setting-drawer/setting-drawer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/setting-drawer/setting-drawer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/sidebar/sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/sidebar/sidebar.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/default/sidebar/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/fullscreen/fullscreen.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/fullscreen/fullscreen.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/layout.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/passport/passport.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/passport/passport.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/layout/passport/passport.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/callback/callback.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/dashboard/dashboard.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/exception/403.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/exception/404.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/exception/500.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/lock/lock.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/lock/lock.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/lock/lock.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/login/login.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/register-result/register-result.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/register-result/register-result.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/register/register.component.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/passport/register/register.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/routes-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/routes/routes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/shared/json-schema/json-schema.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/alain-default.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/alain-pro.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/logo-color.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/logo-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/app-data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/tmp/img/half-float-bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/assets/zorro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/environments/environment.hmr 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/environments/environment.hmr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/hmr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/index 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/main 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/styles 2.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/styles.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/styles/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/styles/theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/test 2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/testing/common.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/tsconfig.app 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/tsconfig.spec 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/src/typings.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/tsconfig 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/tslint 2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vera-admin/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/open/AclApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/open/AclApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/url/AclRequestUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/api/src/main/java/com/vera/acl/url/AclRequestUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/exec/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/exec/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/exec/src/main/java/com/vera/acl/controller/AclController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/exec/src/main/java/com/vera/acl/controller/AclController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../acl/exec/src/main/java/com/vera/acl/service/AclService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../acl/exec/src/main/java/com/vera/acl/service/AclService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,10 +246,11 @@
     <session id="820261331">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -110,7 +293,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="345">
               <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
@@ -119,7 +302,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="15">
               <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
               <folding>
                 <element signature="e#63#64#0" expanded="true" />
@@ -132,7 +315,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vera/shared/model/Rest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="330">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -163,7 +346,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vera/shared/model/Function3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -197,7 +380,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -261,7 +444,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="20" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
@@ -311,14 +494,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538920644419" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538920688946" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -367,18 +550,19 @@
       <workItem from="1538751782946" duration="3150000" />
       <workItem from="1538880057658" duration="21000" />
       <workItem from="1538883544574" duration="611000" />
-      <workItem from="1538899245961" duration="1550000" />
+      <workItem from="1538899245961" duration="1788000" />
+      <workItem from="1538969459995" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10174000" />
+    <option name="totallyTimeSpent" value="11009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="1400" height="791" extended-state="0" />
+    <frame x="20" y="23" width="1400" height="791" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26435935" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26804122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -387,7 +571,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49779087" visible="true" weight="0.32904148" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49779087" weight="0.32904148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,14 +601,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="345">
           <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="15">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding>
             <element signature="e#63#64#0" expanded="true" />
@@ -433,23 +617,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lombok.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vera/shared/model/Rest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="330">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -471,10 +641,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lombok.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vera/shared/model/Function3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>

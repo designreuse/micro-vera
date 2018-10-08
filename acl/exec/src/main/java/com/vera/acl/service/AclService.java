@@ -22,6 +22,7 @@ import java.util.List;
 public class AclService {
 
     private Enforcer enforcer;
+    private static final String rolePrefix = "_role_";
 
     @Value("${jdbc.driver}")
     String jdbcDriver;
@@ -74,10 +75,6 @@ public class AclService {
      * @return 添加结果
      */
     public boolean addPermissions(String user,String... permissions){
-        if(permissions == null || permissions.length == 0){
-            return false;
-
-        }
         return execBatch(user,permissions,
                 getEnforcer()::hasPermissionForUser,
                 getEnforcer()::addPermissionForUser,
@@ -91,7 +88,7 @@ public class AclService {
      * @return 添加结果
      */
     public boolean addPermissionsForRole(String role,String... permissions){
-        role = "_role_"+role;
+        role = rolePrefix+role;
         return addPermissions(role,permissions);
     }
 
@@ -104,7 +101,7 @@ public class AclService {
     public boolean addUserForRole(String role,String user){
         // 如果已经含有该用户了直接返回
         // 如果用户没有属于任何角色则会抛出异常
-        role = "_role_"+role;
+        role = rolePrefix+role;
         try {
             if (getEnforcer().hasRoleForUser(user, role)) {
                 return true;
@@ -161,6 +158,107 @@ public class AclService {
         return permissions;
     }
 
+    /**
+     * 删除角色下面的某个用户，如果删除失败则直接回滚，如果角色没有包含该用户则直接返回 true
+     * @param role 角色名称
+     * @param user 用户名称
+     * @return 删除结果
+     */
+    public boolean roleDeleteUser(String role,String user){
+        role = rolePrefix + role;
+        if(getEnforcer().hasRoleForUser(user,role)) {
+            if (!getEnforcer().deleteRoleForUser(user, role)) {
+                return  false;
+            }
+            try {
+                getEnforcer().savePolicy();
+                return true;
+            } catch (Exception e) {
+                getEnforcer().addRoleForUser(user,role);
+                return false;
+            }
+        }
+        return  true;
+    }
+
+    /**
+     * 删除某个用户
+     * @param user 用户名
+     * @return 删除结果
+     */
+    public boolean deleteUser(String user){
+        return deleteRole(user);
+    }
+
+    /**
+     * 删除某个角色
+     * @param role
+     * @return
+     */
+    public boolean deleteRole(String role){
+       role = rolePrefix+role;
+       return deleteNode(role);
+    }
+
+    /**
+     * 删除某个节点，可以是用户/角色
+     * @param user
+     * @return
+     */
+     boolean deleteNode(String user){
+        var pList =  getEnforcer().getPermissionsForUser(user);
+        var roles = getEnforcer().getRolesForUser(user);
+        List<String> sons = null;
+        // 如果删除的是角色那么还得查出角色的子节点
+        if(isRole(user)){
+            sons = getEnforcer().getUsersForRole(user);
+        }
+        if(getEnforcer().deleteUser(user)){
+            try{
+                getEnforcer().savePolicy();
+                return true;
+                // 发生了异常，执行回滚恢复内存中的用户数据
+            }catch (Exception e){
+                List<String> permissions = new ArrayList<>();
+                // 映射权限
+                if(pList != null) {
+                    for (List<String> ps : pList) {
+                        permissions.add(ps.get(1));
+                    }
+                }
+                // 恢复权限
+                for (String permission : permissions) {
+                    getEnforcer().addPermissionForUser(user,permission);
+                }
+                // 恢复父节点
+                if(roles != null) {
+                    for (String role : roles) {
+                        getEnforcer().addRoleForUser(user,role);
+                    }
+                }
+                // 恢复子节点
+                if(sons != null){
+                    for (String son : sons) {
+                        getEnforcer().addRoleForUser(son,user);
+                    }
+                }
+                return false;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 判断某个名称是否为角色
+     * @param node
+     * @return
+     */
+    public boolean isRole(String node){
+        if(node == null){
+            return false;
+        }
+        return node.startsWith(rolePrefix);
+    }
 
     /**
      * 批量权限操作公共接口，一个地方发生了异常则全部回滚

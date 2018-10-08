@@ -5,7 +5,7 @@
     <groupId>com.vera</groupId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>com.vera.acl.exec</artifactId>
+    <artifactId>acl.exec</artifactId>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

@@ -24,6 +24,8 @@ public final class AclRequestUrl {
     public static final String usersOfRole= "/role/users";
     // 获取某个用户的所有角色
     public static final String rolesOfUser = "/user/roles";
+    // 删除某个用户
+    public static final String userDelete = "/user/delete";
     // 删除某个角色下面的某个用户
     public static final String roleDeleteUser = "/role/user/delete";
 

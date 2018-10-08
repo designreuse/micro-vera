@@ -14,7 +14,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -123,4 +122,49 @@ public class AclController {
         return rest;
     }
 
+    @ApiOperation(value = "删除某个角色")
+    @ApiImplicitParam(name = "roleDelete",value = "删除模型",dataType = "RoleDelete")
+    @PostMapping(AclRequestUrl.roleDelete)
+    public Rest<Boolean> roleDelete(@RequestBody @Valid RoleDelete roleDelete){
+        var rest = Rest.<Boolean>create();
+        if(aclService.deleteRole(roleDelete.getRole())){
+            rest.with(RestCode.success,"删除角色成功",true);
+        }else{
+            rest.with(RestCode.failed,"删除角色失败",false);
+        }
+        return rest;
+    }
+
+    @ApiOperation(value = "删除某个用户")
+    @ApiImplicitParam(name = "userDelete",value = "删除用户模型",dataType = "UserDelete")
+    @PostMapping(AclRequestUrl.userDelete)
+    public Rest<Boolean> userDelete(@RequestBody @Valid UserDelete userDelete,BindingResult bindingResult){
+        var rest = Rest.<Boolean>create();
+        if(bindingResult.hasErrors()){
+           return rest.withMessages(bindingResult.getAllErrors()).setCode(RestCode.reqParamError);
+        }
+        if(aclService.deleteUser(userDelete.getUser())){
+            rest.with(RestCode.success,"删除用户成功",true);
+        }else{
+            rest.with(RestCode.failed,"删除用户失败",false);
+        }
+        return rest;
+
+    }
+
+    @ApiOperation(value = "角色下面删除某个用户")
+    @ApiImplicitParam(name = "roleDeleteUser",value = "删除模型",dataType = "RoleDeleteUser")
+    @PostMapping(AclRequestUrl.roleDeleteUser)
+    public Rest<Boolean> roleDeleteUser(@RequestBody @Valid RoleDeleteUser roleDeleteUser,BindingResult bindingResult){
+       var rest = Rest.<Boolean>create();
+       if(bindingResult.hasErrors()){
+           return rest.withMessages(bindingResult.getAllErrors()).setCode(RestCode.reqParamError);
+       }
+       if(aclService.roleDeleteUser(roleDeleteUser.getRole(),roleDeleteUser.getUser())){
+           rest.with(RestCode.success,"删除成功",true);
+       }else{
+           rest.with(RestCode.failed,"删除失败",false);
+       }
+       return rest;
+    }
 }
